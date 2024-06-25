@@ -1,0 +1,116 @@
+.footerChild {
+  width: 1367px;
+  position: relative;
+  border-top: 1px solid var(--gray);
+  box-sizing: border-box;
+  height: 1px;
+}
+.logoIcon {
+  width: 16px;
+  position: relative;
+  height: 16px;
+  object-fit: cover;
+}
+.elias {
+  position: relative;
+  font-weight: 500;
+}
+.logoParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-4xs);
+}
+.eliaseliasDevml {
+  position: relative;
+  color: var(--gray);
+  text-decoration: none;
+}
+.frameDiv {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.webDesignerAnd {
+  position: relative;
+}
+.frameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.discordIcon,
+.figmaIcon,
+.githubIcon {
+  position: absolute;
+  height: 100%;
+  width: 28.57%;
+  top: 0;
+  right: 71.43%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.discordIcon,
+.figmaIcon {
+  right: 35.71%;
+  left: 35.71%;
+}
+.discordIcon {
+  right: 0;
+  left: 71.43%;
+}
+.githubParent {
+  width: 112px;
+  position: relative;
+  height: 32px;
+}
+.frameGroup,
+.mediaParent {
+  display: flex;
+  align-items: flex-start;
+}
+.mediaParent {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  font-size: var(--font-size-5xl);
+}
+.frameGroup {
+  width: 1025px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.copyright2022Made {
+  width: 298px;
+  position: relative;
+  color: var(--gray);
+  display: inline-block;
+}
+.footer,
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-29xl);
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 685.5px);
+  padding: 0 0 var(--padding-13xl);
+  gap: var(--gap-13xl);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--white);
+  font-family: var(--font-fira-code);
+}

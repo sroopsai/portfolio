@@ -1,0 +1,22 @@
+.frameChild {
+  width: 4px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--gray);
+  height: 4px;
+}
+.dots,
+.ellipseParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.ellipseParent {
+  align-self: stretch;
+  flex-direction: row;
+}
+.dots {
+  width: 84px;
+  height: 84px;
+  flex-direction: column;
+}

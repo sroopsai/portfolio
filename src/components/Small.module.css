@@ -1,0 +1,116 @@
+.projectChild {
+  width: 330.6px;
+  height: 201px;
+  object-fit: cover;
+  display: none;
+}
+.flask,
+.html,
+.projectChild {
+  position: relative;
+}
+.flask {
+  width: 48px;
+  display: none;
+}
+.htmlGroup,
+.htmlParent {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  gap: var(--gap-5xs);
+}
+.htmlParent {
+  align-self: stretch;
+  display: flex;
+}
+.htmlGroup {
+  width: 330.6px;
+  display: none;
+  box-sizing: border-box;
+}
+.chertnodes {
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  color: var(--white);
+}
+.chertnodes,
+.minecraftServersHosting {
+  align-self: stretch;
+  position: relative;
+}
+.demo {
+  position: relative;
+  font-weight: 500;
+}
+.chertnodesParent,
+.demoWrapper,
+.project {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.demoWrapper {
+  border: 1px solid var(--gray);
+  display: none;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-base);
+}
+.chertnodesParent,
+.project {
+  display: flex;
+  flex-direction: column;
+}
+.chertnodesParent {
+  align-self: stretch;
+  border-top: 1px solid var(--gray);
+  padding: var(--padding-base);
+  gap: var(--gap-base);
+}
+.project {
+  width: 333px;
+  border: 1px solid var(--gray);
+  box-sizing: border-box;
+}
+.python4,
+.scss4 {
+  width: 29px;
+  position: relative;
+  display: none;
+}
+.python4 {
+  width: 20px;
+}
+.projectParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.python14 {
+  width: 39px;
+  position: relative;
+  display: none;
+}
+.frameParent {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.small {
+  position: absolute;
+  top: 1259px;
+  left: 171px;
+  width: 1025px;
+  height: 828px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--gray);
+  font-family: var(--font-fira-code);
+}

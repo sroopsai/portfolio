@@ -1,0 +1,17 @@
+.demo {
+  position: relative;
+  font-weight: 500;
+}
+.statehoverTypesecondary {
+  background-color: var(--color-darkgray-100);
+  border: 1px solid var(--gray);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-base);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--gray);
+  font-family: var(--font-fira-code);
+}

@@ -1,0 +1,69 @@
+.languages {
+  position: relative;
+  font-weight: 600;
+}
+.languagesWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xs);
+}
+.blockChild {
+  align-self: stretch;
+  border-top: 1px solid var(--gray);
+  box-sizing: border-box;
+  height: 1px;
+}
+.blockChild,
+.lua1,
+.typescript {
+  position: relative;
+}
+.lua1 {
+  width: 29px;
+  display: none;
+}
+.typescriptParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.javascript1 {
+  width: 96px;
+  position: relative;
+  display: none;
+}
+.block,
+.frameParent,
+.pythonGroup {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.pythonGroup {
+  display: none;
+  flex-direction: row;
+  gap: var(--gap-2xs);
+}
+.block,
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--padding-5xs);
+  gap: var(--gap-5xs);
+  color: var(--gray);
+}
+.block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--gray);
+  padding: var(--padding-5xs) 0;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--white);
+  font-family: var(--font-fira-code);
+}

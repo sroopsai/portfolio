@@ -1,0 +1,15 @@
+.iLikeWinter {
+  position: relative;
+}
+.fact {
+  border: 1px solid var(--gray);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--gray);
+  font-family: var(--font-fira-code);
+}

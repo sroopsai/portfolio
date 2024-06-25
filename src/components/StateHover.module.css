@@ -1,0 +1,25 @@
+.name {
+  position: relative;
+}
+.nameWrapper {
+  position: absolute;
+  top: -9px;
+  left: 9px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-9xs);
+}
+.statehover {
+  width: 244.5px;
+  position: relative;
+  border: 1px solid var(--white);
+  box-sizing: border-box;
+  height: 37px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--white);
+  font-family: var(--font-fira-code);
+}

@@ -1,0 +1,41 @@
+.logoIcon {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+}
+.elias,
+.logoIcon {
+  position: relative;
+}
+.logoParent {
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  cursor: pointer;
+}
+.header,
+.headerLinkParent,
+.logoParent {
+  display: flex;
+  flex-direction: row;
+}
+.headerLinkParent {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 171px;
+  background-color: var(--background);
+  width: 1024px;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-13xl) 0 var(--padding-5xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--white);
+  font-family: var(--font-fira-code);
+}

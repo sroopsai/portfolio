@@ -1,0 +1,173 @@
+.backgroundChild,
+.backgroundItem {
+  position: absolute;
+  top: 965px;
+  left: 0;
+  border: 1px solid var(--gray);
+  box-sizing: border-box;
+  width: 155px;
+  height: 155px;
+}
+.backgroundItem {
+  top: 0;
+  left: 1375px;
+}
+.background {
+  position: absolute;
+  top: 256px;
+  left: -77px;
+  width: 1530px;
+  height: 1237px;
+}
+.aboutMe,
+.div {
+  position: relative;
+  font-weight: 600;
+}
+.aboutMe {
+  color: var(--white);
+}
+.parent {
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.parent,
+.title,
+.whoAmI {
+  position: absolute;
+}
+.whoAmI {
+  top: 56px;
+  left: 0;
+  font-size: var(--font-size-base);
+  color: var(--white);
+}
+.title {
+  top: 114px;
+  left: 171px;
+  width: 174px;
+  height: 77px;
+}
+.jcGellidonE3numcscugoUnsplaIcon {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 339px;
+  height: 507px;
+  object-fit: cover;
+}
+.line7Stroke {
+  position: absolute;
+  top: 507px;
+  left: 48px;
+  width: 271px;
+  height: 1px;
+}
+.jcGellidonE3numcscugoUnsplaParent {
+  position: absolute;
+  top: 0;
+  left: 685px;
+  width: 343px;
+  height: 508px;
+}
+.helloImElias {
+  margin: 0;
+}
+.helloImEliasContainer {
+  position: absolute;
+  top: 104px;
+  left: 0;
+  line-height: 25px;
+  display: inline-block;
+  width: 515px;
+}
+.about1 {
+  position: absolute;
+  top: 199px;
+  left: 176px;
+  width: 1028px;
+  height: 508px;
+  font-size: var(--font-size-base);
+  color: var(--gray);
+}
+.blockParent,
+.skills {
+  position: absolute;
+  width: 1024px;
+}
+.blockParent {
+  top: 90px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.skills {
+  top: 819px;
+  left: 171px;
+  height: 251px;
+}
+.factParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.instanceGroup {
+  gap: 17px;
+}
+.frameParent,
+.instanceGroup,
+.instanceWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  flex-direction: column;
+  gap: var(--gap-base);
+}
+.logoIcon {
+  position: absolute;
+  top: 56px;
+  left: calc(50% - 24px);
+  width: 113px;
+  height: 113px;
+  object-fit: cover;
+}
+.facts,
+.instanceContainer {
+  position: absolute;
+  top: 68px;
+  left: 761px;
+  width: 178px;
+  height: 169px;
+}
+.facts {
+  top: 1153px;
+  left: 171px;
+  width: 939px;
+  height: 264px;
+}
+.about {
+  width: 1366px;
+  background-color: var(--background);
+  max-width: 100%;
+  height: 1787px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--primary);
+  font-family: var(--font-fira-code);
+}

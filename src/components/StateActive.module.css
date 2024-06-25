@@ -1,0 +1,18 @@
+.div,
+.home {
+  position: relative;
+  font-weight: 500;
+}
+.home {
+  color: var(--white);
+}
+.stateactive {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--primary);
+  font-family: var(--font-fira-code);
+}

@@ -1,0 +1,72 @@
+.projectChild {
+  width: 330.6px;
+  height: 201px;
+  object-fit: cover;
+}
+.flask1,
+.html,
+.projectChild {
+  position: relative;
+}
+.flask1 {
+  width: 48px;
+  display: none;
+}
+.htmlGroup,
+.htmlParent {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  gap: var(--gap-5xs);
+}
+.htmlParent {
+  align-self: stretch;
+  display: flex;
+}
+.htmlGroup {
+  width: 330.6px;
+  display: none;
+  box-sizing: border-box;
+}
+.chertnodes {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+}
+.minecraftServersHosting {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  color: var(--gray);
+}
+.chertnodesParent,
+.instanceParent,
+.project {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.instanceParent {
+  flex-direction: row;
+  gap: var(--gap-base);
+}
+.chertnodesParent,
+.project {
+  flex-direction: column;
+}
+.chertnodesParent {
+  align-self: stretch;
+  border-top: 1px solid var(--gray);
+  padding: var(--padding-base);
+  gap: var(--gap-base);
+  font-size: var(--font-size-5xl);
+  color: var(--white);
+}
+.project {
+  border: 1px solid var(--gray);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--gray);
+  font-family: var(--font-fira-code);
+}

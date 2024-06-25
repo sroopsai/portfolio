@@ -1,0 +1,122 @@
+.logoIcon {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+}
+.elias,
+.logoIcon {
+  position: relative;
+}
+.logoParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  cursor: pointer;
+}
+.frameChild,
+.frameInner,
+.frameItem {
+  position: absolute;
+  top: 12px;
+  left: 11px;
+  background-color: var(--color-gainsboro);
+  width: 1px;
+  height: 1px;
+}
+.frameInner,
+.frameItem {
+  top: 20px;
+  left: 3px;
+  width: 24px;
+  height: 2px;
+  transform: rotate(-45deg);
+  transform-origin: 0 0;
+}
+.frameInner {
+  top: 3px;
+  left: 4px;
+  transform: rotate(45deg);
+}
+.rectangleParent {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  cursor: pointer;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--background);
+  width: 360px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-base) var(--padding-base) var(--padding-5xs);
+  box-sizing: border-box;
+}
+.div,
+.home {
+  position: relative;
+  font-weight: 500;
+}
+.home {
+  color: var(--white);
+}
+.navLink {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.works {
+  position: relative;
+  color: var(--gray);
+}
+.navLink3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.githubParent,
+.navLinkParent {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+}
+.navLinkParent {
+  height: 52.81%;
+  width: 48.33%;
+  top: 14.84%;
+  right: 47.22%;
+  bottom: 32.34%;
+  left: 4.44%;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  font-size: var(--font-size-13xl);
+  color: var(--primary);
+}
+.githubParent {
+  top: 540px;
+  left: 74px;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.burgerOpen {
+  width: 360px;
+  background-color: var(--background);
+  max-width: 100%;
+  height: 640px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--white);
+  font-family: var(--font-fira-code);
+}

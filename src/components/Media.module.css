@@ -1,0 +1,25 @@
+.line10Stroke {
+  width: 1px;
+  position: relative;
+  height: 191px;
+  object-fit: contain;
+}
+.githubIcon {
+  width: 32px;
+  position: relative;
+  height: 32px;
+}
+.githubParent,
+.media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.media {
+  position: absolute;
+  top: 0;
+  left: 17px;
+  background-color: var(--background);
+}

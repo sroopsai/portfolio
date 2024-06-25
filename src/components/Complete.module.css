@@ -1,0 +1,158 @@
+.projectChild {
+  width: 330.6px;
+  height: 201px;
+  object-fit: cover;
+}
+.flask1,
+.html,
+.projectChild {
+  position: relative;
+}
+.flask1 {
+  width: 48px;
+  display: none;
+}
+.htmlGroup,
+.htmlParent {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  gap: var(--gap-5xs);
+}
+.htmlParent {
+  align-self: stretch;
+  display: flex;
+}
+.htmlGroup {
+  width: 330.6px;
+  display: none;
+  box-sizing: border-box;
+}
+.chertnodes {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+}
+.minecraftServersHosting {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  color: var(--gray);
+}
+.chertnodesParent,
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.chertnodesParent {
+  align-self: stretch;
+  border-top: 1px solid var(--gray);
+  padding: var(--padding-base);
+  gap: var(--gap-base);
+  font-size: var(--font-size-5xl);
+  color: var(--white);
+}
+.project {
+  border: 1px solid var(--gray);
+}
+.chertnodes1 {
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  color: var(--white);
+}
+.chertnodes1,
+.minecraftServersHosting1 {
+  align-self: stretch;
+  position: relative;
+}
+.demo {
+  position: relative;
+  font-weight: 500;
+}
+.chertnodesGroup,
+.demoWrapper {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.demoWrapper {
+  border: 1px solid var(--gray);
+  display: none;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-base);
+}
+.chertnodesGroup {
+  align-self: stretch;
+  border-top: 1px solid var(--gray);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-base);
+  gap: var(--gap-base);
+}
+.chertnodes2 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+}
+.minecraftServersHosting2 {
+  align-self: stretch;
+  position: relative;
+  color: var(--gray);
+}
+.liveWrapper {
+  border: 1px solid var(--primary);
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-base);
+}
+.chertnodesContainer {
+  align-self: stretch;
+  border-top: 1px solid var(--gray);
+  flex-direction: column;
+  padding: var(--padding-base);
+  gap: var(--gap-base);
+  color: var(--white);
+}
+.chertnodesContainer,
+.frameParent,
+.project2,
+.projectParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.projectParent {
+  flex-direction: row;
+  gap: var(--gap-base);
+}
+.frameParent,
+.project2 {
+  flex-direction: column;
+}
+.project2 {
+  width: 334px;
+  border: 1px solid var(--gray);
+  box-sizing: border-box;
+}
+.frameParent {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  gap: var(--gap-base);
+}
+.complete {
+  position: absolute;
+  top: 259px;
+  left: 171px;
+  width: 1023.7px;
+  height: 919px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--gray);
+  font-family: var(--font-fira-code);
+}
