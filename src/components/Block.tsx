@@ -1,5 +1,4 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
-import styles from "./Block.module.css";
+import { FunctionComponent, memo, useMemo, type CSSProperties } from "react";
 
 export type BlockType = {
   className?: string;
@@ -36,131 +35,157 @@ export type BlockType = {
   propWidth5?: CSSProperties["width"];
 };
 
-const Block: FunctionComponent<BlockType> = ({
-  className = "",
-  languages,
-  typeScript,
-  lua,
-  lua1,
-  lua3,
-  python,
-  javaScript,
-  javaScript1,
-  python1,
-  javaScript3,
-  python2,
-  javaScript4,
-  lua2,
-  lua4,
-  showJavaScript,
-  javaScript2,
-  frameDiv,
-  javaScriptVisible,
-  frameDiv1,
-  propLeft,
-  propTop,
-  propWidth,
-  propPosition,
-  propFlex,
-  propWidth1,
-  propWidth2,
-  propWidth3,
-  propWidth4,
-  propWidth5,
-}) => {
-  const blockStyle: CSSProperties = useMemo(() => {
-    return {
-      left: propLeft,
-      top: propTop,
-      width: propWidth,
-      position: propPosition,
-      flex: propFlex,
-    };
-  }, [propLeft, propTop, propWidth, propPosition, propFlex]);
+const Block: FunctionComponent<BlockType> = memo(
+  ({
+    className = "",
+    languages,
+    typeScript,
+    lua,
+    lua1,
+    lua3,
+    python,
+    javaScript,
+    javaScript1,
+    python1,
+    javaScript3,
+    python2,
+    javaScript4,
+    lua2,
+    lua4,
+    showJavaScript,
+    javaScript2,
+    frameDiv,
+    javaScriptVisible,
+    frameDiv1,
+    propLeft,
+    propTop,
+    propWidth,
+    propPosition,
+    propFlex,
+    propWidth1,
+    propWidth2,
+    propWidth3,
+    propWidth4,
+    propWidth5,
+  }) => {
+    const blockStyle: CSSProperties = useMemo(() => {
+      return {
+        left: propLeft,
+        top: propTop,
+        width: propWidth,
+        position: propPosition,
+        flex: propFlex,
+      };
+    }, [propLeft, propTop, propWidth, propPosition, propFlex]);
 
-  const luaStyle: CSSProperties = useMemo(() => {
-    return {
-      width: propWidth1,
-    };
-  }, [propWidth1]);
+    const luaStyle: CSSProperties = useMemo(() => {
+      return {
+        width: propWidth1,
+      };
+    }, [propWidth1]);
 
-  const lua1Style: CSSProperties = useMemo(() => {
-    return {
-      width: propWidth2,
-    };
-  }, [propWidth2]);
+    const lua1Style: CSSProperties = useMemo(() => {
+      return {
+        width: propWidth2,
+      };
+    }, [propWidth2]);
 
-  const javaScriptStyle: CSSProperties = useMemo(() => {
-    return {
-      width: propWidth3,
-    };
-  }, [propWidth3]);
+    const javaScriptStyle: CSSProperties = useMemo(() => {
+      return {
+        width: propWidth3,
+      };
+    }, [propWidth3]);
 
-  const javaScript1Style: CSSProperties = useMemo(() => {
-    return {
-      width: propWidth4,
-    };
-  }, [propWidth4]);
+    const javaScript1Style: CSSProperties = useMemo(() => {
+      return {
+        width: propWidth4,
+      };
+    }, [propWidth4]);
 
-  const javaScript2Style: CSSProperties = useMemo(() => {
-    return {
-      width: propWidth5,
-    };
-  }, [propWidth5]);
+    const javaScript2Style: CSSProperties = useMemo(() => {
+      return {
+        width: propWidth5,
+      };
+    }, [propWidth5]);
 
-  return (
-    <div className={[styles.block, className].join(" ")} style={blockStyle}>
-      <div className={styles.languagesWrapper}>
-        <div className={styles.languages}>{languages}</div>
-      </div>
-      <div className={styles.blockChild} />
-      <div className={styles.frameParent}>
-        <div className={styles.typescriptParent}>
-          <div className={styles.typescript}>{typeScript}</div>
-          <div className={styles.typescript}>{lua}</div>
-          {!lua2 && (
-            <div className={styles.lua1} style={luaStyle}>
-              {lua1}
-            </div>
-          )}
-          {!lua4 && (
-            <div className={styles.lua1} style={lua1Style}>
-              {lua3}
-            </div>
-          )}
+    return (
+      <div
+        className={`flex-1 box-border flex flex-col items-start justify-start py-1.5 px-0 gap-[7.5px] min-w-[116px] text-left text-base text-white font-fira-code border-[1px] border-solid border-gray ${className}`}
+        style={blockStyle}
+      >
+        <div className="self-stretch flex flex-row items-start justify-start py-0 px-2">
+          <div className="relative font-semibold inline-block min-w-[87px]">
+            {languages}
+          </div>
         </div>
-        <div className={styles.typescriptParent}>
-          <div className={styles.typescript}>{python}</div>
-          {showJavaScript && (
-            <div className={styles.typescript} style={javaScriptStyle}>
-              {javaScript}
+        <div className="self-stretch h-px relative box-border border-t-[1px] border-solid border-gray" />
+        <div className="self-stretch flex flex-col items-start justify-start py-0 px-2 gap-[8px] text-gray">
+          <div className="flex flex-row items-start justify-start gap-[8px]">
+            <div className="relative inline-block min-w-[96px]">
+              {typeScript}
             </div>
-          )}
-          {!javaScript2 && (
-            <div className={styles.javascript1} style={javaScript1Style}>
-              {javaScript1}
-            </div>
-          )}
-        </div>
-        {!frameDiv && (
-          <div className={styles.pythonGroup}>
-            <div className={styles.typescript}>{python1}</div>
-            {javaScriptVisible && (
-              <div className={styles.typescript} style={javaScript2Style}>
-                {javaScript3}
+            <div className="relative inline-block min-w-[29px]">{lua}</div>
+            {!lua2 && (
+              <div
+                className="self-stretch w-[29px] relative hidden"
+                style={luaStyle}
+              >
+                {lua1}
+              </div>
+            )}
+            {!lua4 && (
+              <div
+                className="self-stretch w-[29px] relative hidden"
+                style={lua1Style}
+              >
+                {lua3}
               </div>
             )}
           </div>
-        )}
-        {!frameDiv1 && (
-          <div className={styles.pythonGroup}>
-            <div className={styles.typescript}>{python2}</div>
-            <div className={styles.typescript}>{javaScript4}</div>
+          <div className="flex flex-row items-start justify-start gap-[8px]">
+            <div className="relative inline-block min-w-[58px]">{python}</div>
+            {showJavaScript && (
+              <div
+                className="relative inline-block min-w-[96px]"
+                style={javaScriptStyle}
+              >
+                {javaScript}
+              </div>
+            )}
+            {!javaScript2 && (
+              <div
+                className="self-stretch w-24 relative hidden"
+                style={javaScript1Style}
+              >
+                {javaScript1}
+              </div>
+            )}
           </div>
-        )}
+          {!frameDiv && (
+            <div className="self-stretch hidden flex-row items-start justify-start gap-[11px]">
+              <div className="relative">{python1}</div>
+              {javaScriptVisible && (
+                <div
+                  className="h-[21px] flex-1 relative inline-block"
+                  style={javaScript2Style}
+                >
+                  {javaScript3}
+                </div>
+              )}
+            </div>
+          )}
+          {!frameDiv1 && (
+            <div className="self-stretch hidden flex-row items-start justify-start gap-[11px]">
+              <div className="relative">{python2}</div>
+              <div className="h-[21px] flex-1 relative inline-block">
+                {javaScript4}
+              </div>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+);
 
 export default Block;

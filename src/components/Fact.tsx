@@ -1,5 +1,4 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
-import styles from "./Fact.module.css";
+import { FunctionComponent, memo, useMemo, type CSSProperties } from "react";
 
 export type FactType = {
   className?: string;
@@ -9,24 +8,24 @@ export type FactType = {
   propColor?: CSSProperties["color"];
 };
 
-const Fact: FunctionComponent<FactType> = ({
-  className = "",
-  description,
-  propColor,
-}) => {
-  const iLikeWinterStyle: CSSProperties = useMemo(() => {
-    return {
-      color: propColor,
-    };
-  }, [propColor]);
+const Fact: FunctionComponent<FactType> = memo(
+  ({ className = "", description, propColor }) => {
+    const iLikeWinterStyle: CSSProperties = useMemo(() => {
+      return {
+        color: propColor,
+      };
+    }, [propColor]);
 
-  return (
-    <div className={[styles.fact, className].join(" ")}>
-      <div className={styles.iLikeWinter} style={iLikeWinterStyle}>
-        {description}
+    return (
+      <div
+        className={`flex-1 box-border flex flex-row items-start justify-start py-1.5 pr-1.5 pl-[7px] min-w-[198px] text-left text-base text-gray font-fira-code border-[1px] border-solid border-gray ${className}`}
+      >
+        <div className="relative" style={iLikeWinterStyle}>
+          {description}
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+);
 
 export default Fact;

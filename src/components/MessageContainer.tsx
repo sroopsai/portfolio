@@ -1,54 +1,38 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { FunctionComponent, memo } from "react";
 import StateHover1 from "./StateHover1";
-import styles from "./MessageContainer.module.css";
 
 export type MessageContainerType = {
   className?: string;
-  username?: string;
-  emailAddress?: string;
-
-  /** Style props */
-  propLeft?: CSSProperties["left"];
 };
 
-const MessageContainer: FunctionComponent<MessageContainerType> = ({
-  className = "",
-  username,
-  emailAddress,
-  propLeft,
-}) => {
-  const frameDiv2Style: CSSProperties = useMemo(() => {
-    return {
-      left: propLeft,
-    };
-  }, [propLeft]);
-
-  return (
-    <div
-      className={[styles.messageMeHereParent, className].join(" ")}
-      style={frameDiv2Style}
-    >
-      <div className={styles.messageMeHere}>Message me here</div>
-      <div className={styles.instanceParent}>
-        <StateHover1
-          twitter="/discord.svg"
-          elias="!Elias#3519"
-          propPosition="unset"
-          propTop="unset"
-          propLeft="unset"
-          propColor="#abb2bf"
-        />
-        <StateHover1
-          twitter="/email.svg"
-          elias="elias@elias.me"
-          propPosition="unset"
-          propTop="unset"
-          propLeft="unset"
-          propColor="#abb2bf"
-        />
+const MessageContainer: FunctionComponent<MessageContainerType> = memo(
+  ({ className = "" }) => {
+    return (
+      <div
+        className={`flex flex-col items-start justify-start py-3.5 px-[15px] gap-[16px] text-left text-base text-white font-fira-code border-[1px] border-solid border-gray ${className}`}
+      >
+        <div className="relative font-semibold">Message me here</div>
+        <div className="flex flex-col items-start justify-start gap-[8px]">
+          <StateHover1
+            twitter="/discord.svg"
+            elias="!Elias#3519"
+            propPosition="unset"
+            propTop="unset"
+            propLeft="unset"
+            propColor="#abb2bf"
+          />
+          <StateHover1
+            twitter="/email.svg"
+            elias="elias@elias.me"
+            propPosition="unset"
+            propTop="unset"
+            propLeft="unset"
+            propColor="#abb2bf"
+          />
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+);
 
 export default MessageContainer;
